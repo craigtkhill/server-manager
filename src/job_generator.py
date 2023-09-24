@@ -7,6 +7,6 @@ class JobGenerator:
         self.__jobs = []
 
     def generate(self) -> Job:
-        job = Job(id=random.randint(1, 100), workload=random.randint(1, 10))
+        job = Job(id=random.randint(1, 10000), workload=random.randint(1, 100))
         self.__jobs.append(job)
         return job
